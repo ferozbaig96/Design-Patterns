@@ -2,6 +2,10 @@ package State;
 
 public class ATMMachine {
 
+    // Context class
+    // Maintains an instance of a ConcreteState that
+    // defines the current state
+
     private ATMState hasCard;
     private ATMState noCard;
     private ATMState hasCorrectPin;
