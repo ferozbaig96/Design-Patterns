@@ -15,14 +15,17 @@ public class Execute {
 
         GormanSlacks broker1 = new GormanSlacks(stockMediator);
         JTPoorman broker2 = new JTPoorman(stockMediator);
+        System.out.println();
 
         broker1.saleOffer("MSFT", 100);
         broker1.saleOffer("GOOG", 50);
 
-        broker2.saleOffer("MSFT", 100);
+        broker2.saleOffer("MSFT", 200);
         broker2.saleOffer("NRG", 10);
 
         broker1.buyOffer("NRG", 10);
+        broker1.buyOffer("APPL", 30);
+
         stockMediator.showStockOfferings();
     }
 }
